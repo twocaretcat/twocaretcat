@@ -61,6 +61,7 @@
 <a href="https://bun.sh/" rel="external"><kbd>Bun</kbd></a>
 <a href="https://developer.nvidia.com/cuda-zone" rel="external"><kbd>CUDA</kbd></a>
 <a href="https://www.cypress.io/" rel="external"><kbd>Cypress</kbd></a>
+<a href="https://deno.com/" rel="external"><kbd>Deno</kbd></a>
 <a href="https://www.djangoproject.com/" rel="external"><kbd>Django</kbd></a>
 <a href="https://www.docker.com/" rel="external"><kbd>Docker</kbd></a>
 <a href="https://www.electronjs.org/" rel="external"><kbd>Electron</kbd></a>
