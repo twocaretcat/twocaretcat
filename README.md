@@ -38,6 +38,7 @@
 <kbd>C/C++</kbd>
 <kbd>CSS</kbd>
 <kbd>Datalog</kbd>
+<kbd>GraphQL</kbd>
 <kbd>HTML</kbd>
 <kbd>Java</kbd>
 <kbd>JavaScript/TypeScript</kbd>
