@@ -2,8 +2,8 @@
 <div align="center">
 	<a href="https://johng.io" title="John's Portfolio">
 	<picture>
-		<source media="(prefers-reduced-motion)" srcset="logo-static.svg" />
-		<img class="projectLogo" src="logo-animated.svg" alt="Project logo" title="Project logo" width="480" height="150">
+		<source media="(prefers-reduced-motion)" srcset="public/logo/static.svg" />
+		<img class="projectLogo" src="public/logo/animated.svg" alt="Project logo" title="Project logo" width="480" height="150">
 	</picture>
 	</a>
 	<br><br>
@@ -21,19 +21,20 @@
 	<br/>
 	<a title="Github Stats">
 		<picture>
-			<source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.johng.io/api?username=twocaretcat&custom_title=Github%20Stats&count_private=true&include_all_commits=true&show_icons=true&hide_border=true&bg_color=0000&text_color=000&title_color=0F766E&icon_color=0F766E" />
-			<img align="center" src="https://github-readme-stats.johng.io/api?username=twocaretcat&custom_title=Github%20Stats&count_private=true&include_all_commits=true&show_icons=true&hide_border=true&bg_color=0000&text_color=FFF&title_color=2bd4be&icon_color=2bd4be" />
+			<source media="(prefers-color-scheme: light)" srcset="public/cards/stats-light.svg" />
+			<img align="center" src="public/cards/stats-dark.svg" />
 		</picture>
 	</a>
 	<a title="Most Used Languages">
 		<picture>
-			<source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.johng.io/api/top-langs?username=twocaretcat&layout=compact&langs_count=8&hide_border=true&bg_color=0000&text_color=000&title_color=0F766E&icon_color=0F766E" />
-			<img align="center" src="https://github-readme-stats.johng.io/api/top-langs?username=twocaretcat&layout=compact&langs_count=8&hide_border=true&bg_color=0000&text_color=FFF&title_color=2bd4be&icon_color=2bd4be" />
+			<source media="(prefers-color-scheme: light)" srcset="public/cards/top-langs-light.svg" />
+			<img align="center" src="public/cards/top-langs-dark.svg" />
 		</picture>
 	</a>
 </div>
 
 ### 💬 Languages
+
 <kbd>Bash</kbd>
 <kbd>C/C++</kbd>
 <kbd>CSS</kbd>
@@ -57,6 +58,7 @@
 <kbd>VBA</kbd>
 
 ### 🛠️ Technologies
+
 <a href="https://astro.build/" rel="external"><kbd>Astro</kbd></a>
 <a href="https://avajs.dev/" rel="external"><kbd>AVA</kbd></a>
 <a href="https://bun.sh/" rel="external"><kbd>Bun</kbd></a>

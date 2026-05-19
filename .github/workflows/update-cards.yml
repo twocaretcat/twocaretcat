@@ -1,0 +1,53 @@
+name: 📊 Update Cards
+permissions:
+  contents: write
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "4 8 * * 6"
+jobs:
+  update:
+    name: 📊 Update Cards
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📂 Checkout
+        uses: actions/checkout@v6
+
+      - name: 📊 Generate stats card (dark)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: role=OWNER,COLLABORATOR,ORGANIZATION_MEMBER&custom_title=Github%20Stats&count_private=true&include_all_commits=true&show_icons=true&hide_border=true&bg_color=0000&text_color=FFF&title_color=2bd4be&icon_color=2bd4be
+          path: public/cards/stats-dark.svg
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: 📊 Generate stats card (light)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: role=OWNER,COLLABORATOR,ORGANIZATION_MEMBER&custom_title=Github%20Stats&count_private=true&include_all_commits=true&show_icons=true&hide_border=true&bg_color=0000&text_color=000&title_color=0F766E&icon_color=0F766E
+          path: public/cards/stats-light.svg
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: 💬 Generate top languages card (dark)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          options: role=OWNER,COLLABORATOR,ORGANIZATION_MEMBER&layout=compact&langs_count=8&hide_border=true&bg_color=0000&text_color=FFF&title_color=2bd4be&icon_color=2bd4be
+          path: public/cards/top-langs-dark.svg
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: 💬 Generate top languages card (light)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          options: role=OWNER,COLLABORATOR,ORGANIZATION_MEMBER&layout=compact&langs_count=8&hide_border=true&bg_color=0000&text_color=000&title_color=0F766E&icon_color=0F766E
+          path: public/cards/top-langs-light.svg
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: 💾 Commit cards
+        uses: EndBug/add-and-commit@v10.0.0
+        with:
+          add: public/cards/*.svg
+          message: "chore: update README cards [skip ci]"
+          default_author: github_actions
