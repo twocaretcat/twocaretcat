@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v6
 
       - name: 📊 Generate stats card (dark)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: stats
           options: role=OWNER,COLLABORATOR,ORGANIZATION_MEMBER&custom_title=Github%20Stats&count_private=true&include_all_commits=true&show_icons=true&hide_border=true&bg_color=0000&text_color=FFF&title_color=2bd4be&icon_color=2bd4be
@@ -22,7 +22,7 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
 
       - name: 📊 Generate stats card (light)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: stats
           options: role=OWNER,COLLABORATOR,ORGANIZATION_MEMBER&custom_title=Github%20Stats&count_private=true&include_all_commits=true&show_icons=true&hide_border=true&bg_color=0000&text_color=000&title_color=0F766E&icon_color=0F766E
@@ -30,7 +30,7 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
 
       - name: 💬 Generate top languages card (dark)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: top-langs
           options: role=OWNER,COLLABORATOR,ORGANIZATION_MEMBER&layout=compact&langs_count=8&hide_border=true&bg_color=0000&text_color=FFF&title_color=2bd4be&icon_color=2bd4be
@@ -38,7 +38,7 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
 
       - name: 💬 Generate top languages card (light)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: top-langs
           options: role=OWNER,COLLABORATOR,ORGANIZATION_MEMBER&layout=compact&langs_count=8&hide_border=true&bg_color=0000&text_color=000&title_color=0F766E&icon_color=0F766E
