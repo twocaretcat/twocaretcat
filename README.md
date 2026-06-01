@@ -18,9 +18,12 @@ Some of my extracurricular interests include cycling, listening to music, pettin
 
 ## 💼 My Work
 
-| [👤 twocaretcat](https://github.com/twocaretcat)   | [🤝 Caret Collective](https://github.com/caret-collective) | [🧪 Caret Labs](https://github.com/caret-labs-co) |
-| :------------------------------------------------- | :--------------------------------------------------------- | :------------------------------------------------ |
-| Forks, experiments, and personal/academic projects | Community-driven open-source projects                      | Commercial and client work                        |
+The code I write is organized across several different homes based on the nature of the project. If you're new here, most of my work is open-source and can be found under the [Caret Collective](https://github.com/caret-collective) organization.
+
+| [🤝 Caret Collective](https://github.com/caret-collective) | Community-driven open-source projects                        |
+| :--------------------------------------------------------- | :----------------------------------------------------------- |
+| [🧪 Caret Labs](https://github.com/caret-labs-co)          | Commercial and client work                                   |
+| [👤 twocaretcat](https://github.com/twocaretcat)           | Temporary forks, experiments, and personal/academic projects |
 
 ## 📈 Stats
 
