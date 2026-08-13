@@ -4,7 +4,7 @@ permissions:
 on:
   workflow_dispatch:
   schedule:
-    - cron: "4 8 * * 6"
+    - cron: '4 8 * * 6'
 jobs:
   update:
     name: 📊 Update Cards
@@ -12,6 +12,9 @@ jobs:
     steps:
       - name: 📂 Checkout
         uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.PUSH_TOKEN }}
+          persist-credentials: true
 
       - name: 📊 Generate stats card (dark)
         uses: readme-tools/github-readme-stats-action@v2
@@ -49,5 +52,5 @@ jobs:
         uses: EndBug/add-and-commit@v10.0.0
         with:
           add: public/cards/*.svg
-          message: "chore: update README cards [skip ci]"
+          message: 'chore: update README cards [skip ci]'
           default_author: github_actions
