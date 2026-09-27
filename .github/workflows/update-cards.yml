@@ -11,13 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 📂 Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           token: ${{ secrets.PUSH_TOKEN }}
           persist-credentials: true
 
       - name: 📊 Generate stats card (dark)
-        uses: readme-tools/github-readme-stats-action@v2
+        uses: readme-tools/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
         with:
           card: stats
           options: role=OWNER,COLLABORATOR,ORGANIZATION_MEMBER&custom_title=Github%20Stats&count_private=true&include_all_commits=true&show_icons=true&hide_border=true&bg_color=0000&text_color=FFF&title_color=2bd4be&icon_color=2bd4be
@@ -25,7 +25,7 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
 
       - name: 📊 Generate stats card (light)
-        uses: readme-tools/github-readme-stats-action@v2
+        uses: readme-tools/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
         with:
           card: stats
           options: role=OWNER,COLLABORATOR,ORGANIZATION_MEMBER&custom_title=Github%20Stats&count_private=true&include_all_commits=true&show_icons=true&hide_border=true&bg_color=0000&text_color=000&title_color=0F766E&icon_color=0F766E
@@ -33,7 +33,7 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
 
       - name: 💬 Generate top languages card (dark)
-        uses: readme-tools/github-readme-stats-action@v2
+        uses: readme-tools/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
         with:
           card: top-langs
           options: role=OWNER,COLLABORATOR,ORGANIZATION_MEMBER&layout=compact&langs_count=8&hide_border=true&bg_color=0000&text_color=FFF&title_color=2bd4be&icon_color=2bd4be
@@ -41,7 +41,7 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
 
       - name: 💬 Generate top languages card (light)
-        uses: readme-tools/github-readme-stats-action@v2
+        uses: readme-tools/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
         with:
           card: top-langs
           options: role=OWNER,COLLABORATOR,ORGANIZATION_MEMBER&layout=compact&langs_count=8&hide_border=true&bg_color=0000&text_color=000&title_color=0F766E&icon_color=0F766E
@@ -49,7 +49,7 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
 
       - name: 💾 Commit cards
-        uses: EndBug/add-and-commit@v11.1.1
+        uses: EndBug/add-and-commit@cc9c08ba6c8df3b93a8f2db63e89b98368ae2ae8 # v11.1.1
         with:
           add: public/cards/*.svg
           message: 'chore: update README cards [skip ci]'
